@@ -25,6 +25,9 @@ class AccountViewController: UIViewController {
     }
 	
 	@IBAction func loginButtonTap(_ sender: UIButton) {
+        let destinationVC = LoginVC(nibName: "LoginVC", bundle: nil)
+        destinationVC.modalPresentationStyle = .fullScreen
+        self.present(destinationVC, animated: true, completion: nil)
 	}
 	
 }
