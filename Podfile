@@ -8,6 +8,10 @@ target 'JetDevsHomeWork' do
   pod 'SwiftLint'
   pod 'Kingfisher'
   pod 'SnapKit'
+  pod 'Alamofire'
+  pod 'ProgressHUD'
+  pod 'SwiftyJSON'
+  pod 'TPKeyboardAvoiding'
 
   target 'JetDevsHomeWorkTests' do
     inherit! :search_paths
