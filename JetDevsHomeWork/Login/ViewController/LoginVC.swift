@@ -14,9 +14,12 @@ class LoginVC: UIViewController {
     @IBOutlet weak var loginBtn: AppButtonPrimary!
     @IBOutlet weak var closeView: UIView!
     @IBOutlet weak var emailErrorView: UIView!
+    @IBOutlet weak var emailErrorLbl: UILabel!
     @IBOutlet weak var passwordErrorView: UIView!
+    @IBOutlet weak var passwordErrorLbl: UILabel!
     
     let loginViewModel = LoginViewModel()
+    let emailRegEx = "^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +27,12 @@ class LoginVC: UIViewController {
     }
     
     func setupUI() {
+        emailTxt.delegate = self
+        emailTxt.addTarget(self, action: #selector(textFieldDidChanged(_:)), for: .editingChanged)
+        emailTxt.keyboardType = .emailAddress
+        passwordTxt.delegate = self
+        passwordTxt.addTarget(self, action: #selector(textFieldDidChanged(_:)), for: .editingChanged)
+        
         let closeTap = UITapGestureRecognizer(target: self, action: #selector(dismissScreen))
         closeView.isUserInteractionEnabled = true
         closeView.addGestureRecognizer(closeTap)
@@ -37,6 +46,21 @@ class LoginVC: UIViewController {
         self.dismiss(animated: true)
     }
     
+    func isValidEmail() -> Bool {
+        let emailPred = NSPredicate(
+            format: "SELF MATCHES %@", emailRegEx
+        )
+        return emailPred.evaluate(with: emailTxt.text)
+    }
+    
+    func isValidPassword() -> Bool {
+        return !(passwordTxt.text == "")
+    }
+    
+    func checkButtonStatus() {
+        loginBtn.isUserInteractionEnabled = isValidEmail() && isValidPassword()
+    }
+    
     @IBAction func loginButtonTapped(_ sender: UIButton) {
         guard let email = emailTxt.text,
               let password = passwordTxt.text else {
@@ -45,13 +69,37 @@ class LoginVC: UIViewController {
 
         loginViewModel.login(email: email, password: password) { success in
             if success {
-                // Navigate to home screen or perform necessary action
                 print("Login successful")
             } else {
-                // Show error message or handle failed login
                 print("Login failed")
             }
         }
     }
+}
 
+extension LoginVC: UITextFieldDelegate {
+    // MARK: - UITextField Delegate
+    @objc func textFieldDidChanged(_ textField: UITextField) {
+        let errMsg = "can't be blank"
+        switch textField {
+        case emailTxt:
+            if emailTxt.text == "" {
+                emailErrorLbl.text = "Email \(errMsg)"
+            } else {
+                let emailPred = NSPredicate(format: "SELF MATCHES %@", emailRegEx)
+                if !emailPred.evaluate(with: emailTxt.text) {
+                    emailErrorLbl.text = "Wrong format email"
+                }
+            }
+            emailErrorView.isHidden = isValidEmail()
+            
+        case passwordTxt:
+            passwordErrorLbl.text = "Password \(errMsg)"
+            passwordErrorView.isHidden = isValidPassword()
+        default:
+            break
+        }
+        
+        checkButtonStatus()
+    }
 }

@@ -20,9 +20,11 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginVC" customModule="JetDevsHomeWork" customModuleProvider="target">
             <connections>
                 <outlet property="closeView" destination="aOp-Dh-OEd" id="YAd-l6-BQu"/>
+                <outlet property="emailErrorLbl" destination="ceh-Ca-5Ws" id="QIH-2O-x9z"/>
                 <outlet property="emailErrorView" destination="N62-bq-GTP" id="MuJ-qg-X63"/>
                 <outlet property="emailTxt" destination="D7E-Kv-TSs" id="pgq-Rf-wio"/>
                 <outlet property="loginBtn" destination="VrI-I3-IYH" id="Wwf-4y-HwF"/>
+                <outlet property="passwordErrorLbl" destination="QZw-Kn-Tcx" id="GdF-Vb-oaY"/>
                 <outlet property="passwordErrorView" destination="grJ-7E-yqT" id="cIg-1X-LgB"/>
                 <outlet property="passwordTxt" destination="XNS-69-VGz" id="14w-XL-VdS"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -76,13 +78,13 @@
                                                                                 <constraint firstAttribute="height" constant="45" id="s3Q-YQ-ADX"/>
                                                                             </constraints>
                                                                             <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
-                                                                            <textInputTraits key="textInputTraits"/>
+                                                                            <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                                         </textField>
                                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A76-Sn-wQq">
-                                                                            <rect key="frame" x="14.000000000000004" y="-10.666666666666657" width="40.333333333333343" height="20.666666666666668"/>
+                                                                            <rect key="frame" x="13.999999999999996" y="-10" width="41.666666666666657" height="20"/>
                                                                             <subviews>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XiP-LK-VAz">
-                                                                                    <rect key="frame" x="5.9999999999999982" y="2.9999999999999991" width="28.333333333333329" height="14.666666666666664"/>
+                                                                                    <rect key="frame" x="6.0000000000000018" y="3" width="29.666666666666671" height="14"/>
                                                                                     <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
                                                                                     <nil key="textColor"/>
                                                                                     <nil key="highlightedColor"/>
@@ -151,13 +153,13 @@
                                                                                 <constraint firstAttribute="height" constant="45" id="qEc-RA-hww"/>
                                                                             </constraints>
                                                                             <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
-                                                                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                                            <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                                         </textField>
                                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GPi-U1-8EX">
-                                                                            <rect key="frame" x="13.999999999999996" y="-10.666666666666686" width="62.666666666666657" height="20.666666666666668"/>
+                                                                            <rect key="frame" x="14" y="-10" width="65.333333333333329" height="20"/>
                                                                             <subviews>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pkg-vH-cpv">
-                                                                                    <rect key="frame" x="6" y="2.9999999999999991" width="50.666666666666657" height="14.666666666666664"/>
+                                                                                    <rect key="frame" x="6.0000000000000036" y="3" width="53.333333333333343" height="14"/>
                                                                                     <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
                                                                                     <nil key="textColor"/>
                                                                                     <nil key="highlightedColor"/>
@@ -312,7 +314,7 @@
     </objects>
     <designables>
         <designable name="VrI-I3-IYH">
-            <size key="intrinsicContentSize" width="44" height="34"/>
+            <size key="intrinsicContentSize" width="45" height="33"/>
         </designable>
     </designables>
     <resources>
