@@ -11,7 +11,7 @@ class LoginVC: UIViewController {
     
     @IBOutlet weak var emailTxt: UITextField!
     @IBOutlet weak var passwordTxt: UITextField!
-    @IBOutlet weak var loginBtn: UIButton!
+    @IBOutlet weak var loginBtn: AppButtonPrimary!
     @IBOutlet weak var closeView: UIView!
     @IBOutlet weak var emailErrorView: UIView!
     @IBOutlet weak var passwordErrorView: UIView!
@@ -30,6 +30,7 @@ class LoginVC: UIViewController {
         
         emailErrorView.isHidden = true
         passwordErrorView.isHidden = true
+        loginBtn.isUserInteractionEnabled = false
     }
     
     @objc func dismissScreen() {

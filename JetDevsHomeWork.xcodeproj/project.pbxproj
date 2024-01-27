@@ -45,6 +45,8 @@
 		D980564B2B6572FF00D2F7FD /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D980564A2B6572FF00D2F7FD /* LoginViewModel.swift */; };
 		D98056502B65738700D2F7FD /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D980564E2B65738700D2F7FD /* LoginVC.swift */; };
 		D98056512B65738700D2F7FD /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D980564F2B65738700D2F7FD /* LoginVC.xib */; };
+		D9D3A6442B658D7D00DF93A3 /* UIButton+JetDevs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D3A6432B658D7D00DF93A3 /* UIButton+JetDevs.swift */; };
+		D9D3A6482B658E6C00DF93A3 /* UIColor+JetDevs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D3A6472B658E6C00DF93A3 /* UIColor+JetDevs.swift */; };
 		DD9CD5C395D5FAE03F59B68E /* Pods_JetDevsHomeWork_JetDevsHomeWorkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2FFF8B3EB514C818C31135B /* Pods_JetDevsHomeWork_JetDevsHomeWorkUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -114,6 +116,8 @@
 		D980564A2B6572FF00D2F7FD /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		D980564E2B65738700D2F7FD /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		D980564F2B65738700D2F7FD /* LoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
+		D9D3A6432B658D7D00DF93A3 /* UIButton+JetDevs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+JetDevs.swift"; sourceTree = "<group>"; };
+		D9D3A6472B658E6C00DF93A3 /* UIColor+JetDevs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+JetDevs.swift"; sourceTree = "<group>"; };
 		E168756431AD9B671DACC28B /* Pods_JetDevsHomeWorkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JetDevsHomeWorkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F00AF71BC0DB1CFCDB921924 /* Pods_JetDevsHomeWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JetDevsHomeWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7B560239606A0E97A233578 /* Pods-JetDevsHomeWork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JetDevsHomeWork.release.xcconfig"; path = "Target Support Files/Pods-JetDevsHomeWork/Pods-JetDevsHomeWork.release.xcconfig"; sourceTree = "<group>"; };
@@ -251,6 +255,7 @@
 		4E677C12272B860A006E325E /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				D9D3A6452B658DE000DF93A3 /* SubClass */,
 				4E677C4927323092006E325E /* Extension */,
 				4E677C13272B862C006E325E /* Constants */,
 			);
@@ -293,6 +298,7 @@
 		4E677C4927323092006E325E /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				D9D3A6462B658E5800DF93A3 /* UIColor */,
 				4E677C4A273230A4006E325E /* UIFont */,
 			);
 			path = Extension;
@@ -352,6 +358,30 @@
 				D980564F2B65738700D2F7FD /* LoginVC.xib */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		D9D3A6422B658D6200DF93A3 /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				D9D3A6432B658D7D00DF93A3 /* UIButton+JetDevs.swift */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
+		D9D3A6452B658DE000DF93A3 /* SubClass */ = {
+			isa = PBXGroup;
+			children = (
+				D9D3A6422B658D6200DF93A3 /* UIButton */,
+			);
+			path = SubClass;
+			sourceTree = "<group>";
+		};
+		D9D3A6462B658E5800DF93A3 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				D9D3A6472B658E6C00DF93A3 /* UIColor+JetDevs.swift */,
+			);
+			path = UIColor;
 			sourceTree = "<group>";
 		};
 		F06A01B79BA78652B8652EA7 /* Frameworks */ = {
@@ -642,6 +672,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E677BFF272B8319006E325E /* BaseTabBarController.swift in Sources */,
+				D9D3A6482B658E6C00DF93A3 /* UIColor+JetDevs.swift in Sources */,
 				4E677C10272B8455006E325E /* AccountViewController.swift in Sources */,
 				4E677BD2272B827F006E325E /* ViewController.swift in Sources */,
 				4E677C4C273230E5006E325E /* UIFont+JetDevs.swift in Sources */,
@@ -651,6 +682,7 @@
 				4E677BCE272B827F006E325E /* AppDelegate.swift in Sources */,
 				4E677C18272B88A6006E325E /* HomeViewController.swift in Sources */,
 				D980564B2B6572FF00D2F7FD /* LoginViewModel.swift in Sources */,
+				D9D3A6442B658D7D00DF93A3 /* UIButton+JetDevs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
