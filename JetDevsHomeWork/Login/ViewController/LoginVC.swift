@@ -13,6 +13,8 @@ class LoginVC: UIViewController {
     @IBOutlet weak var passwordTxt: UITextField!
     @IBOutlet weak var loginBtn: UIButton!
     @IBOutlet weak var closeView: UIView!
+    @IBOutlet weak var emailErrorView: UIView!
+    @IBOutlet weak var passwordErrorView: UIView!
     
     let loginViewModel = LoginViewModel()
     
@@ -25,6 +27,9 @@ class LoginVC: UIViewController {
         let closeTap = UITapGestureRecognizer(target: self, action: #selector(dismissScreen))
         closeView.isUserInteractionEnabled = true
         closeView.addGestureRecognizer(closeTap)
+        
+        emailErrorView.isHidden = true
+        passwordErrorView.isHidden = true
     }
     
     @objc func dismissScreen() {
