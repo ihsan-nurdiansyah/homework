@@ -39,6 +39,7 @@ Screenshot:
 <img width="300" alt="Screenshot 2024-01-28 at 23 13 43" src="https://github.com/ihsan-nurdiansyah/homework/assets/3762214/2f5c8285-e979-41e3-9058-6cdbf23541ad">
 <img width="300" alt="Screenshot 2024-01-28 at 23 14 07" src="https://github.com/ihsan-nurdiansyah/homework/assets/3762214/9d5b916d-5d97-4c05-b717-6a374b88d9c7">
 <img width="300" alt="Screenshot 2024-01-28 at 23 14 12" src="https://github.com/ihsan-nurdiansyah/homework/assets/3762214/6e83cf72-c62d-4cb6-81bc-05e0ed0e4084">
+<img width="300" alt="Screenshot 2024-01-29 at 00 07 48" src="https://github.com/ihsan-nurdiansyah/homework/assets/3762214/d234511e-0e08-49be-a85f-6a2335514e8c">
 
 
 
