@@ -72,8 +72,8 @@ class LoginVC: UIViewController {
             case .success(let apiResponse):
                 saveObject(apiResponse.data.user)
                 self.dismissScreen()
-            case .failure(let error):
-                self.showAlert(title: "Login Failed", message: error.localizedDescription)
+            case .failure(_):
+                self.showAlert(title: "Login Failed", message: "Your email or password is incorrect.")
             }
         }
     }

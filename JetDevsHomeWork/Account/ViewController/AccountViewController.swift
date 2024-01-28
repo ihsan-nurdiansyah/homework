@@ -42,7 +42,6 @@ class AccountViewController: UIViewController {
             let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = "yyyy-MM-dd"
             if let date = dateFormatter.date(from: String(userData.createdAt.prefix(10))) {
-                let daysAgo = timeAgo(from: date)
                 daysLabel.text = "Created \(timeAgo(from: date))"
             }
             let imageUrl = URL(string: userData.userProfileURL)
