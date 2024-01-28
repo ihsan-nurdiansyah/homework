@@ -67,17 +67,29 @@ class LoginVC: UIViewController {
             return
         }
 
-        loginViewModel.login(email: email, password: password) { success in
-            if success {
-                print("Login successful")
-            } else {
-                print("Login failed")
+        loginViewModel.login(email: email, password: password) { result in
+            switch result {
+            case .success(let loginResponse):
+                print("Token: \(loginResponse.token)")
+            case .failure:
+                self.showAlert(title: "Login Failed", message: "Incorrect username or password.")
             }
         }
     }
 }
 
+extension LoginVC: LoginViewModelDelegate {
+    
+    func showAlert(title: String, message: String) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alertController.addAction(okAction)
+        present(alertController, animated: true, completion: nil)
+    }
+}
+
 extension LoginVC: UITextFieldDelegate {
+    
     // MARK: - UITextField Delegate
     @objc func textFieldDidChanged(_ textField: UITextField) {
         let errMsg = "can't be blank"
