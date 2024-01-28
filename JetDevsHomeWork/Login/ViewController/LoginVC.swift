@@ -73,7 +73,7 @@ class LoginVC: UIViewController {
                 saveObject(apiResponse.data.user)
                 self.dismissScreen()
             case .failure(let error):
-                print("Error fetching data: \(error.localizedDescription)")
+                self.showAlert(title: "Login Failed", message: error.localizedDescription)
             }
         }
     }

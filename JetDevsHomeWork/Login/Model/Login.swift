@@ -57,3 +57,8 @@ func retrieveObject() -> User? {
     }
     return nil
 }
+
+func removeObject() {
+    UserDefaults.standard.removeObject(forKey: "userData")
+    UserDefaults.standard.synchronize()
+}

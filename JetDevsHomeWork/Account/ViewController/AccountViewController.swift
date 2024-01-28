@@ -15,10 +15,14 @@ class AccountViewController: UIViewController {
 	@IBOutlet weak var daysLabel: UILabel!
 	@IBOutlet weak var nameLabel: UILabel!
 	@IBOutlet weak var headImageView: UIImageView!
-	override func viewDidLoad() {
+    @IBOutlet weak var exitView: UIView!
+    
+    override func viewDidLoad() {
         super.viewDidLoad()
-
 		self.navigationController?.navigationBar.isHidden = true
+        let closeTap = UITapGestureRecognizer(target: self, action: #selector(userLogout))
+        exitView.isUserInteractionEnabled = true
+        exitView.addGestureRecognizer(closeTap)
     }
 	
 	@IBAction func loginButtonTap(_ sender: UIButton) {
@@ -41,13 +45,21 @@ class AccountViewController: UIViewController {
                 let daysAgo = timeAgo(from: date)
                 daysLabel.text = "Created \(timeAgo(from: date))"
             }
+            let imageUrl = URL(string: userData.userProfileURL)
+            headImageView.kf.setImage(with: imageUrl)
             nonLoginView.isHidden = true
             loginView.isHidden = false
+            exitView.isHidden = false
         } else {
             nonLoginView.isHidden = false
             loginView.isHidden = true
+            exitView.isHidden = true
         }
-        
+    }
+    
+    @objc func userLogout() {
+        removeObject()
+        setData()
     }
     
     func timeAgo(from date: Date) -> String {

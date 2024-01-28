@@ -81,10 +81,10 @@
                                                                             <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                                         </textField>
                                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A76-Sn-wQq">
-                                                                            <rect key="frame" x="13.999999999999996" y="-10" width="41.666666666666657" height="20"/>
+                                                                            <rect key="frame" x="14.000000000000004" y="-10.666666666666657" width="40.333333333333343" height="20.666666666666668"/>
                                                                             <subviews>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XiP-LK-VAz">
-                                                                                    <rect key="frame" x="6.0000000000000018" y="3" width="29.666666666666671" height="14"/>
+                                                                                    <rect key="frame" x="5.9999999999999982" y="2.9999999999999991" width="28.333333333333329" height="14.666666666666664"/>
                                                                                     <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
                                                                                     <nil key="textColor"/>
                                                                                     <nil key="highlightedColor"/>
@@ -156,10 +156,10 @@
                                                                             <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                                         </textField>
                                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GPi-U1-8EX">
-                                                                            <rect key="frame" x="14" y="-10" width="65.333333333333329" height="20"/>
+                                                                            <rect key="frame" x="13.999999999999996" y="-10.666666666666686" width="62.666666666666657" height="20.666666666666668"/>
                                                                             <subviews>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pkg-vH-cpv">
-                                                                                    <rect key="frame" x="6.0000000000000036" y="3" width="53.333333333333343" height="14"/>
+                                                                                    <rect key="frame" x="6" y="2.9999999999999991" width="50.666666666666657" height="14.666666666666664"/>
                                                                                     <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
                                                                                     <nil key="textColor"/>
                                                                                     <nil key="highlightedColor"/>
@@ -314,7 +314,7 @@
     </objects>
     <designables>
         <designable name="VrI-I3-IYH">
-            <size key="intrinsicContentSize" width="45" height="33"/>
+            <size key="intrinsicContentSize" width="44" height="34"/>
         </designable>
     </designables>
     <resources>

@@ -6,7 +6,7 @@ inhibit_all_warnings!
 target 'JetDevsHomeWork' do
   pod 'RxSwift', '~> 5.1.0'
   pod 'SwiftLint'
-  pod 'Kingfisher'
+  pod 'Kingfisher', '~> 7.0'
   pod 'SnapKit'
   pod 'Alamofire'
   pod 'ProgressHUD'

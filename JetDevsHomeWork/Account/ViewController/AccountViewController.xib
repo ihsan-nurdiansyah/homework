@@ -23,6 +23,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AccountViewController" customModule="JetDevsHomeWork" customModuleProvider="target">
             <connections>
                 <outlet property="daysLabel" destination="UAw-Oc-lPg" id="F7G-5L-SxP"/>
+                <outlet property="exitView" destination="YFU-eT-Sgx" id="40K-r9-l6d"/>
                 <outlet property="headImageView" destination="g7w-qB-4LN" id="xy1-C3-UGm"/>
                 <outlet property="loginView" destination="gQk-Rv-H92" id="f3m-h3-mPJ"/>
                 <outlet property="nameLabel" destination="Igt-oU-dvM" id="4cX-Kl-LnB"/>
@@ -131,11 +132,32 @@
                         <constraint firstItem="g7w-qB-4LN" firstAttribute="centerX" secondItem="gQk-Rv-H92" secondAttribute="centerX" id="zxF-qR-gft"/>
                     </constraints>
                 </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YFU-eT-Sgx">
+                    <rect key="frame" x="354" y="48" width="40" height="40"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rectangle.portrait.and.arrow.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Q51-4s-MmL">
+                            <rect key="frame" x="10" y="10" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="7y2-ws-c2f"/>
+                                <constraint firstAttribute="height" constant="20" id="hTh-KI-n1a"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="Q51-4s-MmL" firstAttribute="centerX" secondItem="YFU-eT-Sgx" secondAttribute="centerX" id="UyI-9y-Qom"/>
+                        <constraint firstAttribute="height" constant="40" id="jWg-Q9-IIy"/>
+                        <constraint firstAttribute="width" constant="40" id="onY-94-taR"/>
+                        <constraint firstItem="Q51-4s-MmL" firstAttribute="centerY" secondItem="YFU-eT-Sgx" secondAttribute="centerY" id="zFf-mc-LM1"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="YFU-eT-Sgx" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="S6Q-Yh-yM9"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Gxa-gZ-CwO" secondAttribute="trailing" id="T8L-G5-olt"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="YFU-eT-Sgx" secondAttribute="trailing" constant="20" id="UIL-6h-fNw"/>
                 <constraint firstItem="gQk-Rv-H92" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="UWJ-AN-0wo"/>
                 <constraint firstItem="gQk-Rv-H92" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="V52-0l-Zgs"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="gQk-Rv-H92" secondAttribute="bottom" id="f7u-Yn-uqc"/>
@@ -147,10 +169,16 @@
             <point key="canvasLocation" x="-26" y="99"/>
         </view>
     </objects>
+    <designables>
+        <designable name="Zoq-j2-Gbh">
+            <size key="intrinsicContentSize" width="44" height="34"/>
+        </designable>
+    </designables>
     <resources>
         <image name="Avatar" width="68" height="68"/>
         <image name="Login" width="144" height="145"/>
         <image name="home_logo" width="185" height="70"/>
+        <image name="rectangle.portrait.and.arrow.right" catalog="system" width="128" height="109"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

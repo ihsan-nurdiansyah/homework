@@ -10,7 +10,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
-  - Kingfisher
+  - Kingfisher (~> 7.0)
   - ProgressHUD
   - RxSwift (~> 5.1.0)
   - SnapKit
@@ -39,6 +39,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
   TPKeyboardAvoiding: d55b3ea7b362540af8fcf36aa3ed2e87bf210cc6
 
-PODFILE CHECKSUM: b25f94f48fa612b89fb102052b856ec1a8c55a7b
+PODFILE CHECKSUM: 58d0803f307630c6c9930b5c6ec68f75ed9a9f3c
 
 COCOAPODS: 1.12.1
