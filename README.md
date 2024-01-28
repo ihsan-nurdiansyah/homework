@@ -33,6 +33,7 @@ View: Represents the user interface components of the application. It displays t
 ViewModel: Acts as an intermediary between the View and the Model. It fetches data from the Model and prepares it for display in the View. It also handles user interactions from the View and performs necessary actions.
 
 Screenshot:
+
 <img width="300" alt="Screenshot 2024-01-28 at 23 13 37" src="https://github.com/ihsan-nurdiansyah/homework/assets/3762214/e9230477-e98b-4dbd-97c8-1040965ae64a">
 <img width="300" alt="Screenshot 2024-01-28 at 23 13 39" src="https://github.com/ihsan-nurdiansyah/homework/assets/3762214/a6c82f57-c5cd-4858-9d27-ae4588b187c1">
 <img width="300" alt="Screenshot 2024-01-28 at 23 13 43" src="https://github.com/ihsan-nurdiansyah/homework/assets/3762214/2f5c8285-e979-41e3-9058-6cdbf23541ad">
