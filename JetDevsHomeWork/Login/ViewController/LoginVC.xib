@@ -153,7 +153,7 @@
                                                                                 <constraint firstAttribute="height" constant="45" id="qEc-RA-hww"/>
                                                                             </constraints>
                                                                             <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
-                                                                            <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                                                            <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                                         </textField>
                                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GPi-U1-8EX">
                                                                             <rect key="frame" x="14" y="-10" width="65.333333333333329" height="20"/>

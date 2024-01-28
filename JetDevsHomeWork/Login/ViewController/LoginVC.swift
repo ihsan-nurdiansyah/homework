@@ -67,12 +67,13 @@ class LoginVC: UIViewController {
             return
         }
 
-        loginViewModel.login(email: email, password: password) { result in
-            switch result {
-            case .success(let loginResponse):
-                print("Token: \(loginResponse.token)")
-            case .failure:
-                self.showAlert(title: "Login Failed", message: "Incorrect username or password.")
+        loginViewModel.login(email: email, password: password) { response in
+            switch response {
+            case .success(let apiResponse):
+                saveObject(apiResponse.data.user)
+                self.dismissScreen()
+            case .failure(let error):
+                print("Error fetching data: \(error.localizedDescription)")
             }
         }
     }
