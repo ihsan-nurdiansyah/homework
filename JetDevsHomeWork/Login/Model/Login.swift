@@ -7,12 +7,6 @@
 
 import Foundation
 
-struct Login {
-    
-    var email: String
-    var password: String
-}
-
 struct User: Codable {
     
     let userId: Int

@@ -10,7 +10,6 @@ target 'JetDevsHomeWork' do
   pod 'SnapKit'
   pod 'Alamofire'
   pod 'ProgressHUD'
-  pod 'SwiftyJSON'
   pod 'TPKeyboardAvoiding'
 
   target 'JetDevsHomeWorkTests' do
